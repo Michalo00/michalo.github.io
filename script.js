@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     // Set countdown date
-    var countdownDate = new Date("2024-04-20T22:30:00").getTime();
+    var countdownDate = new Date("2024-04-21T03:30:00").getTime();
 
     // Update date and time
     function updateTime() {
