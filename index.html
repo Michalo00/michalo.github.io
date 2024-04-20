@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael Studio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container" id="container" style="display:none;">
+        <div class="header">
+            <span id="datetime"></span>
+            <span id="countdown"></span>
+        </div>
+        <div class="content">
+            <h1>MICHAEL STUDIO</h1>
+            <h2>RZECZY DO ZROBIENIA:</h2>
+            <ul id="tasks">
+                <li><input type="checkbox" id="task1">MEMORIES SNAP</li>
+                <li><input type="checkbox" id="task2">TEST TIKTOKÓW</li>
+				<li><input type="checkbox" id="task3">LAST DANCE WITH KNIFE</li>
+				<li><input type="checkbox" id="task4">HORROREK we SATURDAY</li>
+				<li><input type="checkbox" id="task5">ROMAN SUCK</li>
+				<li><input type="checkbox" id="task6">PLANOWANIE PLAYLIST</li>
+				<li><input type="checkbox" id="task7">TO DO</li>
+				
+                <!-- Add more tasks here -->
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        // Prompt for password before showing content
+        var password = prompt("Enter password to access the page:");
+        if (password === "ROMANSUCK2024") {
+            document.getElementById("container").style.display = "block";
+        } else {
+            alert("Incorrect password. You are not authorized to access this page.");
+            window.location.href = "unauthorized.html";
+        }
+    </script>
+</body>
+</html>
